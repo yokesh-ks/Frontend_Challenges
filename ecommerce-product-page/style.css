@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 110px;
+}
+
+.navbar {
+    max-width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    color: hsl(219, 9%, 45%);
+}
+
+.menu:hover{
+    color: hsl(220, 13%, 13%);
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.user-avatar{
+    width: 54px;
+    height: 54px;
+}
+
+.main{
+    max-width: 1012px;
+    margin: 0 auto;
+    display: flex;
+    gap: 124px;
+}
+
+.main-section {
+    max-width: 444px;
+    padding: 92px 0px;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.big-image{
+    width: 100%;
+}
+
+.big-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.sub-image{
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    
+}
+
+.sub-image img{
+    height: 100%;
+    border-radius: 12px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 30%;
+    height: 56px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 12px;
+    font-size: 24px;
+}
+
+.increase, .decrease{
+ cursor: pointer;
+}
+
+.bottom .Add-to-cart{
+    width: 60%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.content h6 {
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-size: 12px;
+}
+
+.content h1 {
+    font-size: 44px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: hsl(219, 9%, 45%);
+}
+
+.discount {
+    display: flex;
+    gap: 30px;
+}
+
+.discount-price{
+    font-size: 24px;
+}
+
+.discount-percentage{
+    background-color:hsl(25, 100%, 94%) ;
+    color: hsl(26, 100%, 55%) ;
+    padding: 4px;
+}
+
+.original-price{
+    color: hsl(219, 9%, 45%);
+}
+
+.card-container {
+    width: 360px;
+    background: white;
+    position: absolute;
+    top: 110px;
+    margin-left: 700px;
+    box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.75);
+    display: none;
+    
+}
+
+.card-container.active {
+    display: block;
+}
+
+.card-container .head {
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+}
+.card-container .card-body {
+    width: 100%;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.checkout-contain{
+ padding: 0px 26px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 10px;
+}
+
+.checkout-contain .shoe-img{
+    width: 50px;
+}
+
+.checkout-contain h1{
+    font-size: 16px;
+    line-height: 1.5;
+    color: hsl(219, 9%, 45%);
+}
+
+.checkout-contain p{
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: hsl(219, 9%, 45%);
+}
+
+.checkout-contain p span{
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 700;
+}
+
+button{
+    display: inline-block;
+    width: 312px;
+    height: 56px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 12px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+.hambergermenu{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        padding: 20px;
+    }
+    .left{
+        display: none;
+    }
+
+    .hambergermenu{
+        display: block;
+    }
+    .hambergermenu.active{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        cursor: pointer;
+        height: 20px;
+        color: hsl(220, 13%, 13%);
+    }
+    
+    .menu:hover{
+        color: hsl(220, 13%, 13%);
+        border: none
+    }
+
+    .left.active{
+        display : block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: 100vh;
+        top: 110px;
+        padding: 20px;
+        left: 0;
+        width: 250px;
+        background: white;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        height: 1300px
+    }
+
+    .main-section {
+        width: 100vw;
+        padding:10px;
+    }
+    .counter{
+        width: 100%;
+        height: 56px;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bottom .Add-to-cart {
+        width: 100%;
+        margin-top: 10px;
+        height: 56px;
+    }
+    .card-container {
+        margin-left: 8px;
+        margin-top: 10px;
+    }
+}
