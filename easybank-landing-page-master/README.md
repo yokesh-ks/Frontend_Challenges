@@ -20,5 +20,3 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 ## Author
 
 - Website - http://yokesh.in/
-- Frontend Mentor - [@yokesh-ks](https://www.frontendmentor.io/profile/yokesh-ks)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
