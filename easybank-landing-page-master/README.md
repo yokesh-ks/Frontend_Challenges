@@ -5,7 +5,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: https://github.com/yokesh-ks/Frontend_Challenges/edit/main/easybank-landing-page-master/
 - Live Site URL: https://yokesh-ks.github.io/Frontend_Challenges/easybank-landing-page-master/
 
 ## My process
